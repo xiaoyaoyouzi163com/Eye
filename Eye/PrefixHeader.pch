@@ -1,0 +1,54 @@
+//
+//  PrefixHeader.pch
+//  Eye
+//
+//  Created by chenxiang on 16/3/12.
+//  Copyright © 2016年 陈祥. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+/*
+ eye:
+ 首页:
+ http://baobab.wandoujia.com/api/v2/feed?num=2
+ 
+ 更多
+ http://baobab.wandoujia.com/api/v2/feed?date=1457452800000&num=2
+ 
+ playURL
+ 
+ 
+ 发现更多:
+ 
+ http://baobab.wandoujia.com/api/v2/categories?
+ 
+ 
+ 按分享
+ http://baobab.wandoujia.com/api/v3/videos?categoryName=%E5%88%9B%E6%84%8F&strategy=shareCount
+ 
+ 按时间
+ http://baobab.wandoujia.com/api/v3/videos?categoryName=%E5%88%9B%E6%84%8F&strategy=date
+ 
+ 热门:
+ 总
+ http://baobab.wandoujia.com/api/v3/ranklist?num=10&strategy=historical
+ 周
+ http://baobab.wandoujia.com/api/v3/ranklist?num=10&strategy=weekly
+ 月
+ http://baobab.wandoujia.com/api/v3/ranklist?num=10&strategy=monthly
+ 
+ */
+
+
+typedef void(^ResultBlock)(id result);
+
+#define SCREEN_HEIGHT [[UIScreen mainScreen]bounds].size.height
+
+#define SCREEN_WIDTH [[UIScreen mainScreen]bounds].size.width
+
+
+#endif /* PrefixHeader_pch */
