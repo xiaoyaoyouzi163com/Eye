@@ -13,6 +13,7 @@
 #import "UMSocialQQHandler.h"
 #import "UMSocialWechatHandler.h"
 #import "AFNetworkReachabilityManager.h"
+#import "umsocial"
 @interface AppDelegate ()
 
 @end
@@ -41,7 +42,9 @@
     //qq的AppID
     [UMSocialQQHandler setQQWithAppId:@"1105196779" appKey:@"43RTpuMNufKQIYvY" url:@"http://www.baidu.com"];
     
-    [UMSocialConfig hiddenNotInstallPlatforms:@[UMShareToQQ, UMShareToQzone, UMShareToWechatSession, UMShareToWechatTimeline]];
+    [UMSocialSinaSSOHandler ]
+    
+    [UMSocialConfig hiddenNotInstallPlatforms:@[UMShareToQQ, UMShareToQzone, UMShareToWechatSession, UMShareToWechatTimeline,UMShareToSina]];
     
     
     AFNetworkReachabilityManager *manager = [AFNetworkReachabilityManager sharedManager];
